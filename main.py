@@ -1,15 +1,11 @@
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
-from mangum import Mangum
+
 from typing import Optional  
 import requests
 
 app = FastAPI()
-@app.get("/")
-def read_root():
-    return {"message": "Hello from FastAPI on Vercel!"}
 
-handler = Mangum(app)
 
 # CORS Configuration: Allow requests from the React frontend
 origins = ["http://localhost:3000"]
