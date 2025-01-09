@@ -9,6 +9,7 @@ app = FastAPI()
 
 # CORS Configuration: Allow requests from the React frontend
 origins = [
+    "https://valueglance-snowy.vercel.app",
     "https://valueglance-5rijcsfoc-athsb009s-projects.vercel.app", 
     "http://localhost:3000",  
 ]
